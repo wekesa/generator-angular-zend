@@ -53,15 +53,15 @@ var Generator = module.exports = function Generator(args, options) {
     args.push('--minsafe');
   }
 
-  this.hookFor('angular-php:common', {
+  this.hookFor('angular-zend:common', {
     args: args
   });
 
-  this.hookFor('angular-php:main', {
+  this.hookFor('angular-zend:main', {
     args: args
   });
 
-  this.hookFor('angular-php:controller', {
+  this.hookFor('angular-zend:controller', {
     args: args
   });
 

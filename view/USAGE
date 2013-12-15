@@ -2,7 +2,7 @@ Description:
     Creates a new AngularJS view
 
 Example:
-    yo angular-php:view thing
+    yo angular-zend:view thing
 
     This will create:
         app/views/thing.html

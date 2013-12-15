@@ -7,8 +7,8 @@ var angularUtils = require('../util.js');
 
 var Generator = module.exports = function Generator() {
   ScriptBase.apply(this, arguments);
-  this.hookFor('angular-php:controller');
-  this.hookFor('angular-php:view');
+  this.hookFor('angular-zend:controller');
+  this.hookFor('angular-zend:view');
 };
 
 util.inherits(Generator, ScriptBase);

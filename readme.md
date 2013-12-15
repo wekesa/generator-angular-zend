@@ -1,8 +1,8 @@
 # AngularJS generator with PHP
 
-[![NPM version](https://badge.fury.io/js/generator-angular-php.png)](http://badge.fury.io/js/generator-angular-php)
-[![Build Status](https://secure.travis-ci.org/amercier/generator-angular-php.png?branch=master)](http://travis-ci.org/amercier/generator-angular-php)
-[![Dependency Status](https://gemnasium.com/amercier/generator-angular-php.png)](https://gemnasium.com/amercier/generator-angular-php)
+[![NPM version](https://badge.fury.io/js/generator-angular-zend.png)](http://badge.fury.io/js/generator-angular-zend)
+[![Build Status](https://secure.travis-ci.org/amercier/generator-angular-zend.png?branch=master)](http://travis-ci.org/amercier/generator-angular-zend)
+[![Dependency Status](https://gemnasium.com/amercier/generator-angular-zend.png)](https://gemnasium.com/amercier/generator-angular-zend)
 
 Based on [generator-angular](https://github.com/yeoman/generator-angular). Adds
 a `/app/api` folder containing a sample RESTful PHP API. The API is available under
@@ -16,9 +16,9 @@ and [grunt-php](https://github.com/sindresorhus/grunt-php) (on master branch, se
 
 ## Usage
 
-Install `generator-angular-php`:
+Install `generator-angular-zend`:
 ```
-npm install -g generator-angular-php
+npm install -g generator-angular-zend
 ```
 
 Make a new directory, and `cd` into it:
@@ -26,9 +26,9 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo angular-php`, optionally passing an app name:
+Run `yo angular-zend`, optionally passing an app name:
 ```
-yo angular-php [app-name]
+yo angular-zend [app-name]
 ```
 
 Run `grunt` for building and `grunt serve` for preview
@@ -40,18 +40,18 @@ In `app/api` directory, run `make install` to update Composer dependencies.
 
 Available generators:
 
-* [angular-php](#app) (aka [angular-php:app](#app))
-* [angular-php:controller](#controller)
-* [angular-php:directive](#directive)
-* [angular-php:filter](#filter)
-* [angular-php:route](#route)
-* [angular-php:service](#service)
-* [angular-php:provider](#service)
-* [angular-php:factory](#service)
-* [angular-php:value](#service)
-* [angular-php:constant](#service)
-* [angular-php:decorator] (#decorator)
-* [angular-php:view](#view)
+* [angular-zend](#app) (aka [angular-zend:app](#app))
+* [angular-zend:controller](#controller)
+* [angular-zend:directive](#directive)
+* [angular-zend:filter](#filter)
+* [angular-zend:route](#route)
+* [angular-zend:service](#service)
+* [angular-zend:provider](#service)
+* [angular-zend:factory](#service)
+* [angular-zend:value](#service)
+* [angular-zend:constant](#service)
+* [angular-zend:decorator] (#decorator)
+* [angular-zend:view](#view)
 
 **Note: Generators are to be run from the root directory of your app.**
 
@@ -60,7 +60,7 @@ Sets up a new AngularJS app, generating all the boilerplate you need to get star
 
 Example:
 ```bash
-yo angular-php
+yo angular-zend
 ```
 
 ### Route
@@ -68,7 +68,7 @@ Generates a controller and view, and configures a route in `app/scripts/app.js` 
 
 Example:
 ```bash
-yo angular-php:route myroute
+yo angular-zend:route myroute
 ```
 
 Produces `app/scripts/controllers/myroute.js`:
@@ -88,7 +88,7 @@ Generates a controller in `app/scripts/controllers`.
 
 Example:
 ```bash
-yo angular-php:controller user
+yo angular-zend:controller user
 ```
 
 Produces `app/scripts/controllers/user.js`:
@@ -102,7 +102,7 @@ Generates a directive in `app/scripts/directives`.
 
 Example:
 ```bash
-yo angular-php:directive myDirective
+yo angular-zend:directive myDirective
 ```
 
 Produces `app/scripts/directives/myDirective.js`:
@@ -123,7 +123,7 @@ Generates a filter in `app/scripts/filters`.
 
 Example:
 ```bash
-yo angular-php:filter myFilter
+yo angular-zend:filter myFilter
 ```
 
 Produces `app/scripts/filters/myFilter.js`:
@@ -140,7 +140,7 @@ Generates an HTML view file in `app/views`.
 
 Example:
 ```bash
-yo angular-php:view user
+yo angular-zend:view user
 ```
 
 Produces `app/views/user.html`:
@@ -153,7 +153,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo angular-php:service myService
+yo angular-zend:service myService
 ```
 
 Produces `app/scripts/services/myService.js`:
@@ -163,14 +163,14 @@ angular.module('myMod').service('myService', function () {
 });
 ```
 
-You can also do `yo angular-php:factory`, `yo angular-php:provider`, `yo angular-php:value`, and `yo angular-php:constant` for other types of services.
+You can also do `yo angular-zend:factory`, `yo angular-zend:provider`, `yo angular-zend:value`, and `yo angular-zend:constant` for other types of services.
 
 ### Decorator
 Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo angular-php:decorator serviceName
+yo angular-zend:decorator serviceName
 ```
 
 Produces `app/scripts/decorators/serviceNameDecorator.js`:
@@ -191,7 +191,7 @@ For generators that output scripts, the `--coffee` option will output CoffeeScri
 
 For example:
 ```bash
-yo angular-php:controller user --coffee
+yo angular-zend:controller user --coffee
 ```
 
 Produces `app/scripts/controller/user.coffee`:
@@ -210,7 +210,7 @@ By default, generators produce unannotated code. Without annotations, AngularJS'
 
 #### Example
 ```bash
-yo angular-php:controller user --minsafe
+yo angular-zend:controller user --minsafe
 ```
 
 Produces `app/controller/user.js`:
@@ -250,7 +250,7 @@ By default, new scripts are added to the index.html file. However, this may not 
 
 To skip adding them to the index, pass in the skip-add argument:
 ```bash
-yo angular-php:service serviceName --skip-add
+yo angular-zend:service serviceName --skip-add
 ```
 
 ## Bower Components
